@@ -25,3 +25,5 @@
     -> What features can effect their prices?
 
     -> the features like color , Brand , Horsepower etc. affects the selling price.
+
+    -> The Dataset we are using to perfom further exercises is provide in the */module 1* Folder
