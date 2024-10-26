@@ -1,0 +1,41 @@
+## Basic Insights from the data :
+
+  * Understand your data before begin any analysis
+
+  * Should check :
+
+      * Data Types
+
+      * Data Distribution
+
+  * Local Potential issues with the data such as the wrong datatype of features, which may need t be resolved later on.
+
+**Dtype function :**
+
+  // in pandas we use "dataframe.dtypes" to check data types
+
+  df.dtypes  // it returns the data type of each column
+
+**Describe function :**
+
+  df.describe()
+
+  // Return the statistical summary of dataframe which can be used to find out the extreme outliers and large deviations.
+
+  // the ouputs :
+        // count : the number of terms
+        // mean : average column values
+        // std : column standard daviation
+        // the maximum and minimum values
+        // as well as the boundary of each quartiles
+        //it ignores the rows and columns that do not contain numbers.
+
+  df.describe(include="all") // it summarizes all the columns with or without numbers
+  //additional outputs:
+        // Unique : it is the number of ibjects in the column
+        // top : it is the mot frequently occuring object
+        // freq : it is the number of times the top object appears in the column
+
+**Info() function :**
+
+  df.info() provides a concise summary of your DataFrame by showing top 30 and bottom 30 rows of the data frame
